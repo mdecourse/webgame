@@ -9,7 +9,11 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="amd.20160924155615.1"><vh>有關 Brython Server</vh></v>
+<v t="amd.20160924234615.1"><vh>有關 Brython</vh></v>
+<v t="amd.20160924234838.1"><vh>有關 pixi.js</vh></v>
+<v t="amd.20160924155615.1" a="E"><vh>有關 Brython Server</vh>
+<v t="amd.20160924233857.1"><vh>遊戲範例</vh></v>
+</v>
 <v t="amd.20160924231617.1"><vh>@edit README.md</vh></v>
 <v t="amd.20160924230750.1" a="E"><vh>@clean bs.html</vh>
 <v t="amd.20160924230802.1" a="E"><vh>html</vh>
@@ -3204,5 +3208,10 @@ app.run()
 <t tx="amd.20160924231046.9">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"&gt;&lt;/script&gt;
 &lt;!-- &lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/3.2.5/www/src/brython.js"&gt;&lt;/script&gt; --&gt;
 </t>
+<t tx="amd.20160924233857.1">https://github.com/BrythonServer/Spacewar/
+
+</t>
+<t tx="amd.20160924234615.1">https://www.brython.info/static_doc/en/intro.html</t>
+<t tx="amd.20160924234838.1">http://www.pixijs.com/</t>
 </tnodes>
 </leo_file>

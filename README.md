@@ -3,4 +3,6 @@
 
 https://mdecourse.github.io/webgame/bs.html
 
+https://mdecourse.github.io/webgame/bunny.html
+
 https://mdecourse.github.io/webgame/spacewar.html

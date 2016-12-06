@@ -9,6 +9,10 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
+<v t="yen.20161206151211.1"><vh>@settings</vh>
+<v t="yen.20161206151211.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
+<v t="yen.20161206151211.3"><vh>@string initial_split_orientation = horizontal</vh></v>
+</v>
 <v t="amd.20160925153615.1"><vh>有關本專案</vh></v>
 <v t="amd.20160924234615.1"><vh>有關 Brython</vh></v>
 <v t="amd.20160924234838.1"><vh>有關 pixi.js</vh></v>
@@ -16,9 +20,9 @@
 <v t="amd.20160924233857.1"><vh>遊戲範例</vh></v>
 </v>
 <v t="amd.20160924231617.1"><vh>@edit README.md</vh></v>
-<v t="amd.20160924230750.1" a="E"><vh>@clean bs.html</vh>
+<v t="amd.20160924230750.1"><vh>@clean bs.html</vh>
 <v t="amd.20160924230802.1" a="E"><vh>html</vh>
-<v t="amd.20160924230802.2"><vh>head</vh>
+<v t="amd.20160924230802.2" a="E"><vh>head</vh>
 <v t="amd.20160924230802.3"><vh>title</vh></v>
 <v t="amd.20160924230802.4"><vh>link</vh></v>
 <v t="amd.20160924230802.5"><vh>script</vh></v>
@@ -38,14 +42,14 @@
 </v>
 <v t="amd.20160924231046.1" a="E"><vh>@clean spacewar.html</vh>
 <v t="amd.20160925152655.1" a="E"><vh>html</vh>
-<v t="amd.20160925152655.2"><vh>head</vh>
+<v t="amd.20160925152655.2" a="E"><vh>head</vh>
 <v t="amd.20160925152655.3"><vh>title</vh></v>
 <v t="amd.20160925152655.4"><vh>link</vh></v>
-<v t="amd.20160925152655.5"><vh>script</vh></v>
-<v t="amd.20160925152655.6"><vh>script</vh></v>
-<v t="amd.20160925152655.7"><vh>script</vh></v>
-<v t="amd.20160925152655.8"><vh>script</vh></v>
-<v t="amd.20160925152655.9"><vh>script</vh></v>
+<v t="amd.20160925152655.5"><vh>script (jquery)</vh></v>
+<v t="amd.20160925152655.6"><vh>script (jquery ui)</vh></v>
+<v t="amd.20160925152655.7"><vh>script (pixi)</vh></v>
+<v t="amd.20160925152655.8"><vh>script (buzz)</vh></v>
+<v t="amd.20160925152655.9"><vh>script (brython)</vh></v>
 </v>
 <v t="amd.20160925152655.10" a="E"><vh>body</vh>
 <v t="amd.20160925152655.11"><vh>Brython 啟動</vh></v>
@@ -56,16 +60,16 @@
 </v>
 </v>
 </v>
-<v t="amd.20160925161158.1"><vh>@clean bunny.html</vh>
+<v t="amd.20160925161158.1" a="E"><vh>@clean bunny.html</vh>
 <v t="amd.20160925161158.2" a="E"><vh>html</vh>
-<v t="amd.20160925161158.3"><vh>head</vh>
+<v t="amd.20160925161158.3" a="E"><vh>head</vh>
 <v t="amd.20160925161158.4"><vh>title</vh></v>
 <v t="amd.20160925161158.5"><vh>link</vh></v>
-<v t="amd.20160925161158.6"><vh>script</vh></v>
-<v t="amd.20160925161158.7"><vh>script</vh></v>
-<v t="amd.20160925161158.8"><vh>script</vh></v>
-<v t="amd.20160925161158.9"><vh>script</vh></v>
-<v t="amd.20160925161158.10"><vh>script</vh></v>
+<v t="amd.20160925161158.6"><vh>script (jquery)</vh></v>
+<v t="amd.20160925161158.7"><vh>script (jquery ui)</vh></v>
+<v t="amd.20160925161158.8"><vh>script (pixi)</vh></v>
+<v t="amd.20160925161158.9"><vh>script (buzz)</vh></v>
+<v t="amd.20160925161158.10"><vh>script (brython)</vh></v>
 </v>
 <v t="amd.20160925161158.11" a="E"><vh>body</vh>
 <v t="amd.20160925161158.12"><vh>Brython  啟動</vh></v>
@@ -182,6 +186,9 @@ if module_exists('browser') and module_exists('javascript'):
     from browser import window, document
     from javascript import JSObject, JSConstructor
     
+    # 利用 Brython browser 模組中的 window 物件導入  PIXI Javascript 程式庫
+    # 其中 JSObject 可以直接透過 window 導入 Javascript function
+    # JSConstructor 則用來轉換 class 物件
     GFX = JSObject(window.PIXI)
     GFX_Rectangle = JSConstructor(GFX.Rectangle)
     GFX_Texture = JSConstructor(GFX.Texture)
@@ -189,7 +196,9 @@ if module_exists('browser') and module_exists('javascript'):
     GFX_Sprite = JSConstructor(GFX.Sprite)
     GFX_Graphics = JSConstructor(GFX.Graphics)()
     GFX_Text = JSConstructor(GFX.Text)
-    GFX_DetectRenderer = GFX.autoDetectRenderer 
+    # need to check with PIXI source code for autoDetectRender
+    GFX_DetectRenderer = GFX.autoDetectRenderer
+    # 利用 JSObject 以及 window 導入 buzz.js
     SND = JSObject(window.buzz)
     SND_Sound = JSConstructor(SND.sound)
     
@@ -1501,15 +1510,13 @@ brython(1);
 @others
 &lt;/head&gt;
 </t>
-<t tx="amd.20160925152655.3">
-
-&lt;title&gt;Brython Server&lt;/title&gt;
+<t tx="amd.20160925152655.3">&lt;title&gt;Brython Server&lt;/title&gt;
 
 </t>
 <t tx="amd.20160925152655.4">&lt;link rel="shortcut icon" href="css/favicon.ico"&gt;    
-    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"&gt;
-    &lt;link rel="stylesheet" type="text/css" href="css/bssite.css" media="screen" /&gt;
-    &lt;!-- Latest compiled and minified JavaScript --&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/bssite.css" media="screen" /&gt;
+&lt;!-- Latest compiled and minified JavaScript --&gt;
     
 </t>
 <t tx="amd.20160925152655.5">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" &gt;&lt;/script&gt;
@@ -2052,14 +2059,13 @@ app.run()
 @others
 &lt;/head&gt;
 </t>
-<t tx="amd.20160925161158.4">
-&lt;title&gt;Brython Server&lt;/title&gt;
+<t tx="amd.20160925161158.4">&lt;title&gt;Brython Server&lt;/title&gt;
 
 </t>
 <t tx="amd.20160925161158.5">&lt;link rel="shortcut icon" href="css/favicon.ico"&gt;    
-    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"&gt;
-    &lt;link rel="stylesheet" type="text/css" href="css/bssite.css" media="screen" /&gt;
-    &lt;!-- Latest compiled and minified JavaScript --&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/bssite.css" media="screen" /&gt;
+&lt;!-- Latest compiled and minified JavaScript --&gt;
     </t>
 <t tx="amd.20160925161158.6">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" &gt;&lt;/script&gt;
     </t>
@@ -2733,5 +2739,81 @@ scover = CircleAsset(5, whiteline, white)
 </t>
 <t tx="amd.20160925170952.1">https://github.com/mcfey/Final-Project/blob/master/tictactoe.py</t>
 <t tx="amd.20160925171711.1">https://github.com/HHS-IntroProgramming/Final-Project/network/members</t>
+<t tx="yen.20161206151211.1"></t>
+<t tx="yen.20161206151211.2">QTreeWidget {
+    /* These apply to the selected item, but not to editing items.*/
+    background-color: #ffffec; /* Leo's traditional tree color */
+    selection-color: black; /* was white */
+    selection-background-color: lightgrey;
+    /* font-family: SansSerif; */
+    /*font-family: DejaVu Sans Mono;*/
+    font-family:YaHei Mono;
+    /* 標題字型大小設定 */
+    font-size: 20px;
+    font-weight: normal; /* normal,bold,100,..,900 */
+    font-style: normal; /* normal, italic,oblique */
+ }
+
+/* Headline edit widgets */
+QTreeWidget QLineEdit {
+    background-color: cornsilk;
+    selection-color: white;
+    selection-background-color: blue;
+    /*font-family: DejaVu Sans Mono;*/    
+    font-family:YaHei Mono;
+    /* 沒有特別對應字型大小 */
+    font-size: 20px;
+    font-weight: normal; /* normal,bold,100,..,900 */
+    font-style: normal; /* normal, italic,oblique */
+}
+
+/* The log panes */
+QTextEdit {
+    background-color: #f2fdff;
+    selection-color: red;
+    selection-background-color: blue;
+    /* font-family: Courier New; */
+    font-family:YaHei Mono;
+    /* log font 大小 */
+    font-size: 20px;
+    font-weight: normal; /* normal,bold,100,..,900 */
+    font-style: normal; /* normal, italic,oblique */
+}
+
+/* The body pane */
+QTextEdit#richTextEdit {
+    background-color: #fdf5f5; /* A kind of pink. */
+    selection-color: white;
+    selection-background-color: red;
+    /*font-family: DejaVu Sans Mono;*/
+    /* font-family: Courier New; */
+    font-family:YaHei Mono;
+    /* 內文字型大小 */
+    font-size: 20px;
+    font-weight: normal; /* normal,bold,100,..,900 */
+    font-style: normal; /* normal,italic,oblique */
+}
+
+QLabel {
+    font-family:YaHei Mono;'CherryPy', 'pytz', 'mako', 'beautifulsoup4', 'pymysql', 'peewee'
+    /* 下方的 Minibuffer 標題字型大小 */
+    font-size: 20px;
+    font-weight: normal; /* normal,bold,100,..,900 */
+    font-style: normal; /* normal,italic,oblique */
+}
+
+/* Editor labels */
+QLineEdit#editorLabel {
+    background-color: #ffffec;
+    font-family:YaHei Mono;
+    /* 沒有直接對應字型大小 */
+    font-size: 20px;
+    font-weight: normal; /* normal,bold,100,..,900 */
+    font-style: normal; /* normal,italic,oblique */
+    border: 2px;
+    margin: 2px;
+}</t>
+<t tx="yen.20161206151211.3">horizontal: body pane to the left
+vertical: body pane on the botton</t>
 </tnodes>
 </leo_file>

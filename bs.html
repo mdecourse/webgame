@@ -40,6 +40,9 @@ if module_exists('browser') and module_exists('javascript'):
     from browser import window, document
     from javascript import JSObject, JSConstructor
     
+    # 利用 Brython browser 模組中的 window 物件導入  PIXI Javascript 程式庫
+    # 其中 JSObject 可以直接透過 window 導入 Javascript function
+    # JSConstructor 則用來轉換 class 物件
     GFX = JSObject(window.PIXI)
     GFX_Rectangle = JSConstructor(GFX.Rectangle)
     GFX_Texture = JSConstructor(GFX.Texture)
@@ -47,7 +50,9 @@ if module_exists('browser') and module_exists('javascript'):
     GFX_Sprite = JSConstructor(GFX.Sprite)
     GFX_Graphics = JSConstructor(GFX.Graphics)()
     GFX_Text = JSConstructor(GFX.Text)
-    GFX_DetectRenderer = GFX.autoDetectRenderer 
+    # need to check with PIXI source code for autoDetectRender
+    GFX_DetectRenderer = GFX.autoDetectRenderer
+    # 利用 JSObject 以及 window 導入 buzz.js
     SND = JSObject(window.buzz)
     SND_Sound = JSConstructor(SND.sound)
     

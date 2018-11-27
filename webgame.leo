@@ -185,23 +185,23 @@ def module_exists(module_name):
 if module_exists('browser') and module_exists('javascript'):
 
     from browser import window, document
-    from javascript import JSObject, JSConstructor
-    
+    #from javascript import JSObject, JSConstructor
+
     # 利用 Brython browser 模組中的 window 物件導入  PIXI Javascript 程式庫
     # 其中 JSObject 可以直接透過 window 導入 Javascript function
     # JSConstructor 則用來轉換 class 物件
-    GFX = JSObject(window.PIXI)
-    GFX_Rectangle = JSConstructor(GFX.Rectangle)
-    GFX_Texture = JSConstructor(GFX.Texture)
-    GFX_Texture_fromImage = JSConstructor(GFX.Texture.fromImage)
-    GFX_Sprite = JSConstructor(GFX.Sprite)
-    GFX_Graphics = JSConstructor(GFX.Graphics)()
-    GFX_Text = JSConstructor(GFX.Text)
+    GFX = window.PIXI
+    GFX_Rectangle = GFX.Rectangle.new
+    GFX_Texture = GFX.Texture.new
+    GFX_Texture_fromImage = GFX.Texture.fromImage.new
+    GFX_Sprite = GFX.Sprite.new
+    GFX_Graphics = GFX.Graphics.new()
+    GFX_Text = GFX.Text.new
     # need to check with PIXI source code for autoDetectRender
     GFX_DetectRenderer = GFX.autoDetectRenderer
     # 利用 JSObject 以及 window 導入 buzz.js
-    SND = JSObject(window.buzz)
-    SND_Sound = JSConstructor(SND.sound)
+    SND = window.buzz
+    SND_Sound = SND.sound.new
     
     class GFX_Window(object):
     
@@ -210,7 +210,7 @@ if module_exists('browser') and module_exists('javascript'):
             #self._w = window.open("", "")
             # 在原先的視窗中執行
             self._w = window
-            self._stage = JSConstructor(GFX.Container)()
+            self._stage = GFX.Container.new()
             self.width = width if width != 0 else int(window.innerWidth * 0.9)
             self.height = height if height != 0 else int(window.innerHeight * 0.9)
             self._renderer = GFX.autoDetectRenderer(self.width, self.height, {'transparent':True})

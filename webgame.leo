@@ -14,6 +14,7 @@
 <v t="yen.20161206151211.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
 <v t="amd.20160925153615.1"><vh>有關本專案</vh></v>
+<v t="leo.20181127221236.1"><vh>201811 升級</vh></v>
 <v t="amd.20160924234615.1"><vh>有關 Brython</vh></v>
 <v t="amd.20160924234838.1"><vh>有關 pixi.js</vh></v>
 <v t="amd.20160924155615.1" a="E"><vh>有關 Brython Server</vh>
@@ -1491,11 +1492,13 @@ class App(object):
         `ggame.App.step` method is called once per animation frame.
         """
         self.userfunc = userfunc
-        App._win.animate(self._animate)</t>
+        App._win.animate(self._animate)
+</t>
 <t tx="amd.20160925152655.1">&lt;!doctype html&gt;
 &lt;html&gt;
 @others
-&lt;/html&gt;</t>
+&lt;/html&gt;
+</t>
 <t tx="amd.20160925152655.10">&lt;body&gt;
 @others
 &lt;/body&gt;
@@ -1517,21 +1520,26 @@ brython(1);
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"&gt;
 &lt;link rel="stylesheet" type="text/css" href="css/bssite.css" media="screen" /&gt;
 &lt;!-- Latest compiled and minified JavaScript --&gt;
-    
+ 
+&lt;!--  蓋掉原先的外部 js 連結
 </t>
 <t tx="amd.20160925152655.5">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" &gt;&lt;/script&gt;
-    
 </t>
 <t tx="amd.20160925152655.6">&lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" &gt;&lt;/script&gt;
-    
 </t>
 <t tx="amd.20160925152655.7">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.5/pixi.min.js"&gt;&lt;/script&gt;
-    
 </t>
 <t tx="amd.20160925152655.8">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"&gt;&lt;/script&gt;
-&lt;!-- &lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/3.2.5/www/src/brython.js"&gt;&lt;/script&gt; --&gt;
+&lt;script type="text/javascript" src="https://cdn.rawgit.com/tiggerntatie/brython/2016.07.15/www/src/brython.js"&gt;&lt;/script&gt; 
+
+以下使用自代的對應 js 程式庫 --&gt;
 </t>
-<t tx="amd.20160925152655.9">&lt;script type="text/javascript" src="https://cdn.rawgit.com/tiggerntatie/brython/2016.07.15/www/src/brython.js"&gt;&lt;/script&gt;
+<t tx="amd.20160925152655.9">&lt;script src="js/jquery-3.3.1.min.js" &gt;&lt;/script&gt;
+&lt;script src="js/jquery-ui.1.12.1.min.js" &gt;&lt;/script&gt;
+&lt;script src="js/pixi-4.8.2.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/buzz-1.2.1.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/brython-3.7.0.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/brython_stdlib-3.7.0.js"&gt;&lt;/script&gt;
 </t>
 <t tx="amd.20160925152656.1">&lt;script type="text/python"&gt;
 &lt;&lt; ggame&gt;&gt;
@@ -1952,7 +1960,8 @@ class Spacewar(App):
                 self.tsprites['winner'].x = self.width*3/4-50 if self.ship1.dead else self.width/4-50
 
 app = Spacewar(0,0)
-app.run()</t>
+app.run()
+</t>
 <t tx="amd.20160925153615.1">webgame under github pages
 
 ggame 使用 clone 命名節點</t>
@@ -2054,7 +2063,8 @@ app.run()
 <t tx="amd.20160925161158.2">&lt;!doctype html&gt;
 &lt;html&gt;
 @others
-&lt;/html&gt;</t>
+&lt;/html&gt;
+</t>
 <t tx="amd.20160925161158.3">&lt;head&gt;
 @others
 &lt;/head&gt;
@@ -2066,13 +2076,17 @@ app.run()
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"&gt;
 &lt;link rel="stylesheet" type="text/css" href="css/bssite.css" media="screen" /&gt;
 &lt;!-- Latest compiled and minified JavaScript --&gt;
-    </t>
+    
+</t>
 <t tx="amd.20160925161158.6">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" &gt;&lt;/script&gt;
-    </t>
+    
+</t>
 <t tx="amd.20160925161158.7">&lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" &gt;&lt;/script&gt;
-    </t>
+    
+</t>
 <t tx="amd.20160925161158.8">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.5/pixi.min.js"&gt;&lt;/script&gt;
-    </t>
+    
+</t>
 <t tx="amd.20160925161158.9">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"&gt;&lt;/script&gt;
 &lt;!-- &lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/3.2.5/www/src/brython.js"&gt;&lt;/script&gt; --&gt;
 </t>
@@ -2739,6 +2753,7 @@ scover = CircleAsset(5, whiteline, white)
 </t>
 <t tx="amd.20160925170952.1">https://github.com/mcfey/Final-Project/blob/master/tictactoe.py</t>
 <t tx="amd.20160925171711.1">https://github.com/HHS-IntroProgramming/Final-Project/network/members</t>
+<t tx="leo.20181127221236.1">全部的 js 採用最新版本, 並且自帶在 js 子目錄下</t>
 <t tx="yen.20161206151211.1"></t>
 <t tx="yen.20161206151211.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/

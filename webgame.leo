@@ -80,6 +80,8 @@
 </v>
 </v>
 </v>
+<v t="yen.20210704002636.1"><vh>mars_landing 必須轉換為 bunny 程式架構</vh></v>
+<v t="yen.20210703234750.1"><vh>@edit mars_landing.html</vh></v>
 <v t="amd.20160925165002.1"><vh>範例程式</vh>
 <v t="amd.20160925171711.1"><vh>參考專案</vh></v>
 <v t="amd.20160925165100.1"><vh>程式範例</vh></v>
@@ -2849,5 +2851,6 @@ QLineEdit#editorLabel {
 vertical: body pane on the botton</t>
 <t tx="yen.20210703230241.1">準備用於 cp2021 網際程式專案使用
 使用近端 Brython 3.9.4 版, 其餘 js 沿用舊版</t>
+<t tx="yen.20210704002636.1"></t>
 </tnodes>
 </leo_file>

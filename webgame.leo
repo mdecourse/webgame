@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
-<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
-	<global_window_position top="50" left="50" height="500" width="700"/>
-	<global_log_window_position top="0" left="0" height="0" width="0"/>
-</globals>
+<leo_header file_format="2"/>
+<globals/>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -14,36 +11,38 @@
 <v t="yen.20161206151211.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
 <v t="amd.20160925153615.1"><vh>有關本專案</vh></v>
+<v t="yen.20210703230241.1"><vh>2021 改版</vh>
 <v t="leo.20181127221236.1"><vh>201811 升級</vh></v>
+</v>
 <v t="amd.20160924234615.1"><vh>有關 Brython</vh></v>
 <v t="amd.20160924234838.1"><vh>有關 pixi.js</vh></v>
-<v t="amd.20160924155615.1" a="E"><vh>有關 Brython Server</vh>
+<v t="amd.20160924155615.1"><vh>有關 Brython Server</vh>
 <v t="amd.20160924233857.1"><vh>遊戲範例</vh></v>
 </v>
 <v t="amd.20160924231617.1"><vh>@edit README.md</vh></v>
 <v t="amd.20160924230750.1"><vh>@clean bs.html</vh>
-<v t="amd.20160924230802.1" a="E"><vh>html</vh>
-<v t="amd.20160924230802.2" a="E"><vh>head</vh>
+<v t="amd.20160924230802.1"><vh>html</vh>
+<v t="amd.20160924230802.2"><vh>head</vh>
 <v t="amd.20160924230802.3"><vh>title</vh></v>
 <v t="amd.20160924230802.4"><vh>link</vh></v>
-<v t="amd.20160924230802.5"><vh>script</vh></v>
-<v t="amd.20160924230802.6"><vh>script</vh></v>
-<v t="amd.20160924230802.7"><vh>script</vh></v>
-<v t="amd.20160924230802.8"><vh>script</vh></v>
-<v t="amd.20160924230802.9"><vh>script</vh></v>
+<v t="amd.20160924230802.5"><vh>jquery</vh></v>
+<v t="amd.20160924230802.6"><vh>jquery-ui</vh></v>
+<v t="amd.20160924230802.7"><vh>pixi</vh></v>
+<v t="amd.20160924230802.8"><vh>buzz</vh></v>
+<v t="amd.20160924230802.9"><vh>brython</vh></v>
 </v>
-<v t="amd.20160924230802.10" a="E"><vh>body</vh>
+<v t="amd.20160924230802.10"><vh>body</vh>
 <v t="amd.20160924230802.11"><vh>Brython  啟動</vh></v>
-<v t="amd.20160924230802.12" a="E"><vh>ggame 程式庫</vh>
+<v t="amd.20160924230802.12"><vh>ggame 程式庫</vh>
 <v t="amd.20160925151141.1"><vh>&lt;&lt; ggame &gt;&gt;</vh></v>
 <v t="amd.20160924230913.1"><vh>bs 遊戲程式碼</vh></v>
 </v>
 </v>
 </v>
 </v>
-<v t="amd.20160924231046.1" a="E"><vh>@clean spacewar.html</vh>
-<v t="amd.20160925152655.1" a="E"><vh>html</vh>
-<v t="amd.20160925152655.2" a="E"><vh>head</vh>
+<v t="amd.20160924231046.1"><vh>@clean spacewar.html</vh>
+<v t="amd.20160925152655.1"><vh>html</vh>
+<v t="amd.20160925152655.2"><vh>head</vh>
 <v t="amd.20160925152655.3"><vh>title</vh></v>
 <v t="amd.20160925152655.4"><vh>link</vh></v>
 <v t="amd.20160925152655.5"><vh>script (jquery)</vh></v>
@@ -52,18 +51,18 @@
 <v t="amd.20160925152655.8"><vh>script (buzz)</vh></v>
 <v t="amd.20160925152655.9"><vh>script (brython)</vh></v>
 </v>
-<v t="amd.20160925152655.10" a="E"><vh>body</vh>
+<v t="amd.20160925152655.10"><vh>body</vh>
 <v t="amd.20160925152655.11"><vh>Brython 啟動</vh></v>
-<v t="amd.20160925152656.1" a="E"><vh>ggame 程式庫</vh>
+<v t="amd.20160925152656.1"><vh>ggame 程式庫</vh>
 <v t="amd.20160925151141.1"></v>
 <v t="amd.20160925152839.1"><vh>spacewar 遊戲程式碼</vh></v>
 </v>
 </v>
 </v>
 </v>
-<v t="amd.20160925161158.1" a="E"><vh>@clean bunny.html</vh>
-<v t="amd.20160925161158.2" a="E"><vh>html</vh>
-<v t="amd.20160925161158.3" a="E"><vh>head</vh>
+<v t="amd.20160925161158.1"><vh>@clean bunny.html</vh>
+<v t="amd.20160925161158.2"><vh>html</vh>
+<v t="amd.20160925161158.3"><vh>head</vh>
 <v t="amd.20160925161158.4"><vh>title</vh></v>
 <v t="amd.20160925161158.5"><vh>link</vh></v>
 <v t="amd.20160925161158.6"><vh>script (jquery)</vh></v>
@@ -72,23 +71,23 @@
 <v t="amd.20160925161158.9"><vh>script (buzz)</vh></v>
 <v t="amd.20160925161158.10"><vh>script (brython)</vh></v>
 </v>
-<v t="amd.20160925161158.11" a="E"><vh>body</vh>
+<v t="amd.20160925161158.11"><vh>body</vh>
 <v t="amd.20160925161158.12"><vh>Brython  啟動</vh></v>
-<v t="amd.20160925161158.13" a="E"><vh>ggame 程式庫</vh>
+<v t="amd.20160925161158.13"><vh>ggame 程式庫</vh>
 <v t="amd.20160925151141.1"></v>
 <v t="amd.20160925161158.15"><vh>bunny 遊戲程式碼</vh></v>
 </v>
 </v>
 </v>
 </v>
-<v t="amd.20160925165002.1" a="E"><vh>範例程式</vh>
+<v t="amd.20160925165002.1"><vh>範例程式</vh>
 <v t="amd.20160925171711.1"><vh>參考專案</vh></v>
 <v t="amd.20160925165100.1"><vh>程式範例</vh></v>
-<v t="amd.20160925170921.1" a="E"><vh>TicTacToe</vh>
+<v t="amd.20160925170921.1"><vh>TicTacToe</vh>
 <v t="amd.20160925170952.1"><vh>URL</vh></v>
 </v>
 </v>
-<v t="amd.20160924165123.1" a="E"><vh>@path css</vh>
+<v t="amd.20160924165123.1"><vh>@path css</vh>
 <v t="amd.20160924165127.1"><vh>@edit bssite.css</vh></v>
 </v>
 </vnodes>
@@ -106,11 +105,13 @@ https://github.com/tiggerntatie</t>
 @others
 
 
+
 </t>
 <t tx="amd.20160924230802.1">&lt;!doctype html&gt;
 &lt;html&gt;
 @others
-&lt;/html&gt;</t>
+&lt;/html&gt;
+</t>
 <t tx="amd.20160924230802.10">&lt;body&gt;
 @others
 &lt;/body&gt;
@@ -133,32 +134,43 @@ brython(1);
 @others
 &lt;/head&gt;
 </t>
-<t tx="amd.20160924230802.3">
-&lt;title&gt;Brython Server&lt;/title&gt;
+<t tx="amd.20160924230802.3">&lt;title&gt;Brython Server&lt;/title&gt;
 
 </t>
-<t tx="amd.20160924230802.4">&lt;link rel="shortcut icon" href="css/favicon.ico"&gt;    
-    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"&gt;
+<t tx="amd.20160924230802.4">&lt;meta content="text/html;charset=utf-8" http-equiv="Content-Type"&gt;
+&lt;meta content="utf-8" http-equiv="encoding"&gt;
+&lt;link rel="shortcut icon" href="css/favicon.ico"&gt;    
+    &lt;link rel="stylesheet" href="css/skeleton.css"&gt;
     &lt;link rel="stylesheet" type="text/css" href="css/bssite.css" media="screen" /&gt;
     &lt;!-- Latest compiled and minified JavaScript --&gt;
-    </t>
-<t tx="amd.20160924230802.5">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" &gt;&lt;/script&gt;
-    </t>
-<t tx="amd.20160924230802.6">&lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" &gt;&lt;/script&gt;
-    </t>
-<t tx="amd.20160924230802.7">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.5/pixi.min.js"&gt;&lt;/script&gt;
-    </t>
-<t tx="amd.20160924230802.8">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"&gt;&lt;/script&gt;
-&lt;!-- &lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/3.2.5/www/src/brython.js"&gt;&lt;/script&gt; --&gt;
+    
+
 </t>
-<t tx="amd.20160924230802.9">&lt;script type="text/javascript" src="https://cdn.rawgit.com/tiggerntatie/brython/2016.07.15/www/src/brython.js"&gt;&lt;/script&gt;
+<t tx="amd.20160924230802.5">&lt;script src="./js/jquery.min.1.11.2.js" &gt;&lt;/script&gt;
+    
+
+</t>
+<t tx="amd.20160924230802.6">&lt;script src="./js/jquery-ui.1.12.1.min.js" &gt;&lt;/script&gt;
+    
+
+</t>
+<t tx="amd.20160924230802.7">&lt;script src="./js/pixi.min.3.0.5.js"&gt;&lt;/script&gt;
+    
+
+</t>
+<t tx="amd.20160924230802.8">&lt;script src="./js/buzz.min.1.1.10.js"&gt;&lt;/script&gt;
+
+</t>
+<t tx="amd.20160924230802.9">&lt;script type="text/javascript" src="./js/brython3.9.4.js"&gt;&lt;/script&gt;
 </t>
 <t tx="amd.20160924230913.1"># Create a displayed object at 0,0 using an image asset
 Sprite(ImageAsset("img/boom.png"), (0,0))
 # Create the app, with a 500x500 pixel stage
 app = App(500,500)  
 # Run the app
-app.run()</t>
+app.run()
+
+</t>
 <t tx="amd.20160924231046.1">@language xml
 @tabwidth -4
 @others
@@ -1516,21 +1528,23 @@ brython(1);
 <t tx="amd.20160925152655.3">&lt;title&gt;Brython Server&lt;/title&gt;
 
 </t>
-<t tx="amd.20160925152655.4">&lt;link rel="shortcut icon" href="css/favicon.ico"&gt;    
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"&gt;
+<t tx="amd.20160925152655.4">&lt;meta content="text/html;charset=utf-8" http-equiv="Content-Type"&gt;
+&lt;meta content="utf-8" http-equiv="encoding"&gt;
+&lt;link rel="shortcut icon" href="css/favicon.ico"&gt;    
+&lt;link rel="stylesheet" href="css/skeleton.css"&gt;
 &lt;link rel="stylesheet" type="text/css" href="css/bssite.css" media="screen" /&gt;
 &lt;!-- Latest compiled and minified JavaScript --&gt;
  
 &lt;!--  蓋掉原先的外部 js 連結
 </t>
-<t tx="amd.20160925152655.5">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" &gt;&lt;/script&gt;
+<t tx="amd.20160925152655.5">&lt;script src="./js/jquery.min.1.11.2.js" &gt;&lt;/script&gt;
 </t>
-<t tx="amd.20160925152655.6">&lt;script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" &gt;&lt;/script&gt;
+<t tx="amd.20160925152655.6">&lt;script src="./js/jquery-ui.1.12.1.min.js" &gt;&lt;/script&gt;
 </t>
-<t tx="amd.20160925152655.7">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.5/pixi.min.js"&gt;&lt;/script&gt;
+<t tx="amd.20160925152655.7">&lt;script src="./js/pixi.min.3.0.5.js"&gt;&lt;/script&gt;
 </t>
-<t tx="amd.20160925152655.8">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="https://cdn.rawgit.com/tiggerntatie/brython/2016.07.15/www/src/brython.js"&gt;&lt;/script&gt; 
+<t tx="amd.20160925152655.8">&lt;script src="./js/buzz.min.1.1.10.js"&gt;&lt;/script&gt;
+
 
 以下使用自代的對應 js 程式庫 --&gt;
 </t>
@@ -1538,8 +1552,8 @@ brython(1);
 &lt;script src="js/jquery-ui.1.12.1.min.js" &gt;&lt;/script&gt;
 &lt;script src="js/pixi-4.8.2.min.js"&gt;&lt;/script&gt;
 &lt;script src="js/buzz-1.2.1.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="js/brython-3.7.0.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="js/brython_stdlib-3.7.0.js"&gt;&lt;/script&gt;
+&lt;script src="./js/brython3.9.4.js"&gt;&lt;/script&gt;
+&lt;script src="./js/brython_stdlib3.9.4.js"&gt;&lt;/script&gt;
 </t>
 <t tx="amd.20160925152656.1">&lt;script type="text/python"&gt;
 &lt;&lt; ggame&gt;&gt;
@@ -1971,7 +1985,8 @@ ggame 使用 clone 命名節點</t>
 
 
 </t>
-<t tx="amd.20160925161158.10">&lt;script type="text/javascript" src="https://cdn.rawgit.com/tiggerntatie/brython/2016.07.15/www/src/brython.js"&gt;&lt;/script&gt;
+<t tx="amd.20160925161158.10">&lt;script src="./js/brython3.9.4.js"&gt;&lt;/script&gt;
+&lt;script src="./js/brython_stdlib3.9.4.js"&gt;&lt;/script&gt;
 </t>
 <t tx="amd.20160925161158.11">&lt;body&gt;
 @others
@@ -2072,7 +2087,9 @@ app.run()
 <t tx="amd.20160925161158.4">&lt;title&gt;Brython Server&lt;/title&gt;
 
 </t>
-<t tx="amd.20160925161158.5">&lt;link rel="shortcut icon" href="css/favicon.ico"&gt;    
+<t tx="amd.20160925161158.5">&lt;meta content="text/html;charset=utf-8" http-equiv="Content-Type"&gt;
+&lt;meta content="utf-8" http-equiv="encoding"&gt;
+&lt;link rel="shortcut icon" href="css/favicon.ico"&gt;    
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"&gt;
 &lt;link rel="stylesheet" type="text/css" href="css/bssite.css" media="screen" /&gt;
 &lt;!-- Latest compiled and minified JavaScript --&gt;
@@ -2830,5 +2847,7 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="yen.20161206151211.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="yen.20210703230241.1">準備用於 cp2021 網際程式專案使用
+使用近端 Brython 3.9.4 版, 其餘 js 沿用舊版</t>
 </tnodes>
 </leo_file>
